@@ -1,10 +1,21 @@
 'use client';
 import Layout from '@/Layout';
 import { Form } from '@radix-ui/react-form';
+import { useFormik } from 'formik';
 import Image from 'next/image';
 import React from 'react';
+import * as Yup from 'yup';
 
 const HomeHero = () => {
+	const form = useFormik({
+		validationSchema: subscriptionSchema,
+		initialValues: {
+			email: '',
+		},
+		onSubmit: values => {
+			console.log(values);
+		},
+	});
 	return (
 		<Layout>
 			<div
@@ -43,17 +54,28 @@ const HomeHero = () => {
 								<span className='text-base font-medium text-neutral-10 text-center block mb-6'>
 									Join 2.000+ ambitious entrepreneurs.
 								</span>
-								<form className='flex items-center w-full gap-3'>
-									<input
-										className='bg-transparent py-[11px] px-2 rounded-lg border border-[rgba(255,255,255,0.3)] text-base flex-1 text-white  placeholder:text-neutral-10'
-										placeholder='Enter your email'
-									/>
-									<button
-										type='button'
-										className='bg-neutral-4 rounded-lg text-lg h-[48px] px-6 transition-all duration-200 ease-linear hover:bg-white active:scale-90 border-none'
-									>
-										Join waitlist
-									</button>
+								<form onSubmit={form.handleSubmit}>
+									<div className='flex items-center w-full gap-3'>
+										<input
+											name='email'
+											value={form.values.email}
+											onChange={form.handleChange}
+											className='bg-transparent py-[11px] px-2 rounded-lg border border-[rgba(255,255,255,0.3)] text-base block flex-1 text-white  placeholder:text-neutral-10'
+											placeholder='Enter your email'
+										/>
+
+										<button
+											type='submit'
+											className='bg-neutral-4 rounded-lg text-lg h-[48px] px-6 transition-all duration-200 ease-linear hover:bg-white active:scale-90 border-none'
+										>
+											Join waitlist
+										</button>
+									</div>
+									{form.touched && form.errors.email && (
+										<p className='text-sm mt-2 text-red-500 block'>
+											{form.errors.email}
+										</p>
+									)}
 								</form>
 							</div>
 						</div>
@@ -63,5 +85,9 @@ const HomeHero = () => {
 		</Layout>
 	);
 };
+
+const subscriptionSchema = Yup.object().shape({
+	email: Yup.string().email('Invalid email').required('Required'),
+});
 
 export default HomeHero;

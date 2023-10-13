@@ -22,7 +22,14 @@ const HomeHero = () => {
 					<p className='max-w-[325px] w-full mx-auto text-center text-neutral-10'>
 						Meet the platform that will help you 100X your service business.
 					</p>
-					<div className='max-w-[577px] w-full mx-auto p-2 gradient-border mt-[100px] before:rounded-2xl'>
+					<div className='max-w-[577px] w-full relative mx-auto p-2 gradient-border mt-[100px] before:rounded-2xl'>
+						<div
+							className='absolute h-[1px] w-10 top-0 left-3 animated-line'
+							style={{
+								background:
+									'linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3) )',
+							}}
+						></div>
 						<div className='w-full p-2 before:rounded-xl gradient-border'>
 							<div className='w-full p-10 before:rounded-lg gradient-border-3 bg-[linear-gradient(180deg,rgba(255,255,255,0.08)0%,rgba(255,255,255,0.00)100%)] backdrop-blur-[45px]'>
 								<div className='flex justify-center mb-[6px]'>
@@ -43,7 +50,7 @@ const HomeHero = () => {
 									/>
 									<button
 										type='button'
-										className='bg-white rounded-lg text-lg h-[48px] px-6 transition-all active:scale-90 border-none'
+										className='bg-neutral-4 rounded-lg text-lg h-[48px] px-6 transition-all duration-200 ease-linear hover:bg-white active:scale-90 border-none'
 									>
 										Join waitlist
 									</button>

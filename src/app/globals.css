@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
 	font-family: 'Inter', sans-serif;
 }
@@ -45,4 +44,23 @@ body {
 	-webkit-mask-composite: xor;
 	mask-composite: exclude;
 	pointer-events: none;
+}
+
+.animated-line {
+	animation: borderAnimation 2s infinite linear;
+}
+
+@keyframes borderAnimation {
+	0% {
+		left: 12px;
+	}
+	59% {
+		left: 70%;
+	}
+	99.999% {
+		left: calc(100% - 62px);
+	}
+	100% {
+		left: 12px;
+	}
 }

@@ -15,11 +15,7 @@ body {
 	position: absolute;
 	inset: 0;
 	padding: 1px;
-	background: linear-gradient(
-		0deg,
-		rgba(255, 255, 255, 0),
-		rgba(255, 255, 255, 0.2)
-	);
+	background: linear-gradient(180deg, #2c2c2c, #000);
 	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
 	-webkit-mask-composite: xor;
 	mask-composite: exclude;
@@ -35,11 +31,7 @@ body {
 	position: absolute;
 	inset: 0;
 	padding: 3px;
-	background: linear-gradient(
-		0deg,
-		rgba(255, 255, 255, 0),
-		rgba(255, 255, 255, 0.2)
-	);
+	background: linear-gradient(180deg, #2c2c2c, #000);
 	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
 	-webkit-mask-composite: xor;
 	mask-composite: exclude;

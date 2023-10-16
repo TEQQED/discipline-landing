@@ -60,11 +60,14 @@ body {
 	color: #1c2024 !important;
 	font-family: 'Inter' !important;
 	font-weight: 400 !important;
+	height: 50px !important;
 }
 
 #form-subscription input:focus {
 	border: 1px solid rgba(255, 255, 255, 0.9) !important;
 }
+
+
 
 @keyframes borderAnimation {
 	0% {

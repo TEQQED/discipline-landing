@@ -1,24 +1,11 @@
 'use client';
 import Layout from '@/Layout';
-import { Form } from '@radix-ui/react-form';
-import { useFormik } from 'formik';
 import Image from 'next/image';
 import React from 'react';
 import * as Yup from 'yup';
 import Spline from '@splinetool/react-spline';
-import { toast } from 'react-toastify';
 
 const HomeHero = () => {
-	const form = useFormik({
-		validationSchema: subscriptionSchema,
-		initialValues: {
-			email: '',
-		},
-		onSubmit: values => {
-			toast.success('Successfully added ' + values.email);
-			form.resetForm();
-		},
-	});
 	return (
 		<Layout>
 			<div
@@ -67,29 +54,7 @@ const HomeHero = () => {
 								<span className='text-base font-medium text-neutral-10 text-center block mb-6'>
 									Join 2.000+ ambitious entrepreneurs.
 								</span>
-								<form onSubmit={form.handleSubmit}>
-									<div className='flex items-center w-full gap-3 xmd:flex-col'>
-										<input
-											name='email'
-											value={form.values.email}
-											onChange={form.handleChange}
-											className='bg-transparent py-[11px] px-2 rounded-lg border border-[rgba(255,255,255,0.3)] text-base block flex-1 text-white  placeholder:text-neutral-10 xmd:w-full'
-											placeholder='Enter your email'
-										/>
-
-										<button
-											type='submit'
-											className='bg-neutral-4 rounded-lg text-lg h-[48px] px-6 transition-all duration-200 ease-linear hover:bg-white active:scale-90 border-none xmd:block xmd:w-full sm:text-center'
-										>
-											Join waitlist
-										</button>
-									</div>
-									{form.touched && form.errors.email && (
-										<p className='text-sm mt-2 text-red-500 block'>
-											{form.errors.email}
-										</p>
-									)}
-								</form>
+								<div id='form-subscription' className='klaviyo-form-SgKkMN'></div>
 							</div>
 						</div>
 					</div>
@@ -99,8 +64,8 @@ const HomeHero = () => {
 	);
 };
 
-const subscriptionSchema = Yup.object().shape({
-	email: Yup.string().email('Invalid email').required('Required'),
-});
+// const subscriptionSchema = Yup.object().shape({
+// 	email: Yup.string().email('Invalid email').required('Required'),
+// });
 
 export default HomeHero;

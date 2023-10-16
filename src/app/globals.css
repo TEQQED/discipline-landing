@@ -42,6 +42,30 @@ body {
 	animation: borderAnimation 2s infinite linear;
 }
 
+#form-subscription input {
+	background: transparent !important;
+	border: 1px solid rgba(255, 255, 255, 0.1) !important;
+	color: #fff !important;
+	border-radius: 6px !important;
+}
+
+#form-subscription input::placeholder {
+	color: #7e808a !important;
+}
+
+#form-subscription button {
+	background: #fff !important;
+	padding-left: 24px !important;
+	padding-right: 24px !important;
+	color: #1c2024 !important;
+	font-family: 'Inter' !important;
+	font-weight: 400 !important;
+}
+
+#form-subscription input:focus {
+	border: 1px solid rgba(255, 255, 255, 0.9) !important;
+}
+
 @keyframes borderAnimation {
 	0% {
 		left: 12px;

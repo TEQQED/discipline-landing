@@ -13,6 +13,9 @@ const inter = Inter({
 export const metadata: Metadata = {
 	title: 'Discipline',
 	description: 'Discipline',
+	icons: {
+		icon: '/assets/site-logo.svg',
+	},
 };
 
 export default function RootLayout({

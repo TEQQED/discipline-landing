@@ -20,7 +20,7 @@ const Header = () => {
 					onMouseEnter={() => setHover(true)}
 					onMouseLeave={() => setHover(false)}
 				>
-					<span className='text-neutral-4 transition-all text-sm ease-in-out hover:text-neutral-2 hidden md:block'>
+					<span className='text-neutral-4 transition-all text-sm ease-in-out hover:text-neutral-2 block md:hidden'>
 						Stay up to date
 					</span>
 					{hover ? (

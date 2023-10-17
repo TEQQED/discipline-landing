@@ -19,7 +19,7 @@ const HomeHero = () => {
                 >
                     <div className='h-[72px] w-full block'></div>
                     <div
-                        className='absolute w-[651px] h-[651px] top-[234px] left-[-20px] md:left-8 md:opacity-70'
+                        className='absolute w-[651px] h-[651px] top-[284px] md:top-[234px] left-[-230px] md:left-8 md:opacity-70'
                         style={{mixBlendMode: 'color-dodge'}}
                     >
 
@@ -29,7 +29,7 @@ const HomeHero = () => {
                     </div>
                     <div
                         className='flex items-center min-h-[calc(100vh-72px)] py-20 justify-center w-full px-5 h-full flex-col'>
-                        <h1 className='text-center font-medium text-[48px] leading-[60px block] text-neutral-4 block mb-5 xmd:text-[35px] xmd:leading-[35px] xmd:mb-4'>
+                        <h1 className='text-center font-medium text-heading-sm md:text-heading text-neutral-4 block mb-5 xmd:text-[35px] xmd:leading-[35px] xmd:mb-4'>
                             Supercharge your business
                         </h1>
                         <p className='max-w-[325px] w-full mx-auto text-center text-neutral-10'>
@@ -47,7 +47,7 @@ const HomeHero = () => {
 
                             <div className='w-full p-2 before:rounded-xl gradient-border relative z-[8]'>
                                 <div
-                                    className='w-full p-10 before:rounded-lg gradient-border-3 bg-[linear-gradient(180deg,rgba(255,255,255,0.08)0%,rgba(255,255,255,0.00)100%)] backdrop-blur-[45px]'>
+                                    className='w-full p-4 md:p-10 before:rounded-lg gradient-border-3 bg-[linear-gradient(180deg,rgba(255,255,255,0.08)0%,rgba(255,255,255,0.00)100%)] backdrop-blur-[45px]'>
                                     <div className='flex justify-center mb-[6px]'>
                                         <Image
                                             src='./assets/images/avatars.svg'

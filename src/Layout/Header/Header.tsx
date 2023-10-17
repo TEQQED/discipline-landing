@@ -9,7 +9,7 @@ import TwitterLogo from '@/assets/twitter-x.svg';
 const Header = () => {
 	const [hover, setHover] = useState(false);
 	return (
-		<header className='flex justify-center px-5 sticky top-0 left-0 w-full z-[99] bg-transparent md:bg-[rgba(255,255,255,0.1)]  md:backdrop-blur-[25px]'>
+		<header className='flex justify-center px-5 sticky top-0 left-0 w-full z-[99] md:bg-transparent bg-[rgba(255,255,255,0.1)]  backdrop-blur-[25px] md:backdrop-blur-[0]'>
 			<div className='flex justify-between items-center max-w-[1440px] w-full gap-5 h-[72px]'>
 				<Link href='/'>
 					<LogoWithName />
@@ -20,7 +20,7 @@ const Header = () => {
 					onMouseEnter={() => setHover(true)}
 					onMouseLeave={() => setHover(false)}
 				>
-					<span className='text-neutral-4 transition-all text-sm ease-in-out hover:text-neutral-2 block md:hidden'>
+					<span className='text-neutral-4 transition-all text-sm ease-in-out hover:text-neutral-2 hidden md:block'>
 						Stay up to date
 					</span>
 					{hover ? (

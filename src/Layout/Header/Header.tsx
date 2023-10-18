@@ -15,6 +15,8 @@ const Header = () => {
 					<LogoWithName />
 				</Link>
 				<a
+					target={"_blank"}
+					rel={"noopener noreferrer"}
 					href='https://twitter.com/disciplineso'
 					className='flex items-center gap-3'
 					onMouseEnter={() => setHover(true)}

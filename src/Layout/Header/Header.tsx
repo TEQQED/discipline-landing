@@ -10,7 +10,8 @@ const Header = () => {
 	const [hover, setHover] = useState(false);
 	return (
 		<header className='flex justify-center px-5 sticky top-0 left-0 w-full z-[99] md:bg-transparent  md:backdrop-blur-[0] max-md:relative'>
-			<div className='flex justify-between items-center max-w-[1440px] w-full gap-5 h-[72px]'>
+			<div className='flex justify-between items-center max-w-[1440px] w-full gap-5 h-[72px] relative'>
+				<div className='absolute bottom-0 left-1/2 -translate-x-1/2 h-[1px] w-full max-w-[594px]' style={{background: 'linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.18) 49.27%, rgba(255, 255, 255, 0.00) 100.64%)'}}></div>
 				<Link href='/'>
 					<LogoWithName />
 				</Link>

@@ -27,12 +27,12 @@ const HomeHero = () => {
 						</div>
 					</div> */}
 					<div className='flex items-center min-h-[calc(100vh-72px)] py-20 justify-center w-full px-5 h-full flex-col'>
-						<Image
+						{/* <Image
 							src='/assets/hero-circle.svg'
 							alt='circle'
 							height={95}
 							width={95}
-						/>
+						/> */}
 						<div
 							style={{
 								background:

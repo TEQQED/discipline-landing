@@ -91,3 +91,25 @@ body {
 		left: 12px;
 	}
 }
+
+.animated-circle {
+	animation: circleAnimation 2s infinite linear;
+}
+
+@keyframes circleAnimation {
+	0% {
+		border: 30px solid #fff8e1;
+		opacity: 0.4;
+		filter: blur(10px);
+	}
+	50% {
+		border: 30px solid #fff8e1;
+		opacity: 0.6;
+		filter: blur(5px);
+	}
+	100% {
+		border: 30px solid #fff8e1;
+		opacity: 0.4;
+		filter: blur(10px);
+	}
+}

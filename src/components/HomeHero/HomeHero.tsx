@@ -49,13 +49,14 @@ const HomeHero = () => {
 							Meet the platform that will help you 100X your service business.
 						</p>
 						<div className='max-w-[577px] w-full relative mx-auto p-2 gradient-border mt-10 before:rounded-2xl xmd:mt-[120px]'>
-							<Image
+							<div className='h-[255px] w-[255px] border-[30px] border-[#FFF8E1] rounded-full absolute left-1/2 -translate-x-1/2 -top-[80px] blur-[10px] opacity-40 animated-circle'></div>
+							{/* <Image
 								className='absolute left-1/2 -translate-x-1/2 -top-[110px] max-sm:w-[200px] max-sm:h-[200px] max-sm:top-[-70px]'
 								src='/assets/hero-blurred-circle.svg'
 								height={280}
 								width={280}
 								alt='Circle'
-							/>
+							/> */}
 							<div
 								className='absolute h-[1px] w-10 top-0 left-3 animated-line'
 								style={{

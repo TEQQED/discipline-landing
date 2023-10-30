@@ -18,14 +18,14 @@ const HomeHero = () => {
 				<div className='-mt-[72px] overflow-hidden w-full relative max-w-[1440px] mx-auto'>
 					<div className='h-[72px] w-full block'></div>
 
-					<div
+					{/* <div
 						className='absolute w-[651px] h-[651px] top-[284px] md:top-[234px] left-[-230px] md:left-8 md:opacity-70'
 						style={{ mixBlendMode: 'color-dodge' }}
 					>
 						<div className={'w-[651px] h-[651px]'}>
 							<Cube />
 						</div>
-					</div>
+					</div> */}
 					<div className='flex items-center min-h-[calc(100vh-72px)] py-20 justify-center w-full px-5 h-full flex-col'>
 						<Image
 							src='/assets/hero-circle.svg'

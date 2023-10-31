@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 
 const Cube = dynamic(() => import('../SplineAnimation'), { ssr: true });
 
-const HomeHero = () => {
+const ComingSoon = () => {
 	return (
 		<Layout>
 			<div
@@ -92,8 +92,6 @@ const HomeHero = () => {
 	);
 };
 
-// const subscriptionSchema = Yup.object().shape({
-// 	email: Yup.string().email('Invalid email').required('Required'),
-// });
 
-export default HomeHero;
+
+export default ComingSoon;

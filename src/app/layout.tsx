@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} md:overflow-hidden`}>
+			<body className={`${inter.className}`}>
 				{children}
 				<ToastContainer
 					position='bottom-right'

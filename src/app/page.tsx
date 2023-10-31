@@ -1,10 +1,13 @@
 import Layout from '@/Layout';
-import HomeHero from '@/components/HomeHero';
+import ComingSoon from '@/components/ComingSoon';
+import Home from '@/pages/Home';
 
-export default function Home() {
+export default function Page() {
 	return (
 		<>
-			<HomeHero />
+			<Layout>
+				<Home />
+			</Layout>
 		</>
 	);
 }
